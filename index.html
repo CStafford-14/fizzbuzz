@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FizzBuzz - By Cesium</title>
+        <link rel="stylesheet" href="/index.css" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <div style="display: flex; align-items: center;">
+                <img src="https://raw.githubusercontent.com/CStafford-14/cesium-web/master/img/csi-new.png" style="height: 20pt; padding-right: 5px;">
+                <h1><span class="brand">Cesium </span>FizzBuzz</h1>
+            </div>
+        </div>
+        <p id="output">
+            Please Enable JavaScript to use this webapp.
+        </p>
+        <div id="wrapper" class="wrapper">
+            <div id="input" class="input">
+                <h1>Give me a valid number</h1>
+                <p style="margin: 0; padding: 10px;">Number must be greater than two.</p>
+                <input id="input-form" type="number" name="input" value="100">
+                <button onclick="process()">Do it!</button>
+                <p id="error-num" class="error-default">I said a NUMBER!</p>
+                <p id="error-two" class="error-default">I said GREATER THAN TWO!</p>
+            </div>
+        </div>
+
+        <button onclick="showPrompt()" id="redo-button" class="redo-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+            </svg>
+        </button>
+
+        <script src="app.js"></script>
+    </body>
+</html>

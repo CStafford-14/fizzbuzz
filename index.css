@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&family=Roboto&display=swap');
+
+html, body, div, h1, p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(71, 71, 71) ;
+}
+
+.header {
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 15;
+}
+
+h1 {
+    color: white;
+    font-size: 20pt;
+    font-family: 'Montserrat';
+}
+
+.brand {
+    font-family: 'Righteous';
+}
+
+p {
+    margin-top: 50px;
+    padding: 50px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.error-default {
+    display: none;
+    padding: 10px;
+    margin: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.error-active {
+    display: inline !important;
+}
+
+.input {
+    display: grid;
+    justify-items: center;
+    background-color: rgb(85, 85, 85);
+    padding: 25px;
+    width: min-content;
+    height: min-content;
+    border-radius: 20px;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.25s ease-in-out;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.redo-button {
+    display: grid;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: -50px;
+    bottom: 30px;
+    background-color: rgb(255,255,255);
+    transition: all 0.25s ease-in-out;
+    justify-items: center;
+    align-items: center;
+    border: none;
+    z-index: 15;
+}
+
+.showButton {
+    right: 30px;
+}
+
+#input-form {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
