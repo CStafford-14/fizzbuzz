@@ -71,7 +71,7 @@ p {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 5;
+    z-index: -1;
     top: 0;
     opacity: 0;
     transition: all 0.25s ease-in-out;
@@ -80,6 +80,7 @@ p {
 .active {
     opacity: 1;
     transform: scale(1);
+    z-index: 5 !important;
 }
 
 .redo-button {
