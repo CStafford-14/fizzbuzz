@@ -109,3 +109,7 @@ p {
     margin: 10px;
     text-align: center;
 }
+
+.centered-text {
+    text-align: center;
+}
